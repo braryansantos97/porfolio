@@ -351,6 +351,10 @@ section {
   margin-bottom: 0;
 }
 
+/* .about .swiper-slide img {
+  object-fit: contain;
+} */
+
 /*--------------------------------------------------------------
 # Facts
 --------------------------------------------------------------*/
@@ -405,38 +409,27 @@ section {
 /*--------------------------------------------------------------
 # Akills
 --------------------------------------------------------------*/
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
+.skills .skill-box {
+  display: inline-block;
+  padding: 30px;
+  width: 100%;
 }
 
-.skills .progress .skill {
-  padding: 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
+.skills .skill-box i {
   display: block;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-size: 44px;
+  color: #149ddd;
+  float: left;
+  line-height: 0;
+}
+
+.skills .skill-box span {
+  font-size: 25px;
+  line-height: 40px;
+  display: block;
+  font-weight: 700;
   color: #050d18;
-}
-
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
-}
-
-.skills .progress-bar-wrap {
-  background: #dce8f8;
-  height: 10px;
-}
-
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: .9s;
-  background-color: #149ddd;
+  margin-left: 60px;
 }
 
 /*--------------------------------------------------------------
@@ -450,54 +443,27 @@ section {
   color: #050d18;
 }
 
-.resume .resume-item {
-  padding: 0 0 20px 20px;
-  margin-top: -2px;
-  border-left: 2px solid #1f5297;
-  position: relative;
-}
-
-.resume .resume-item h4 {
-  line-height: 18px;
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  color: #050d18;
-  margin-bottom: 10px;
-}
-
-.resume .resume-item h5 {
-  font-size: 16px;
-  background: #e4edf9;
-  padding: 5px 15px;
+.resume .resume-box {
   display: inline-block;
-  font-weight: 600;
-  margin-bottom: 10px;
+  padding: 30px;
+  width: 100%;
 }
 
-.resume .resume-item ul {
-  padding-left: 20px;
+.resume .resume-box i {
+  display: block;
+  font-size: 44px;
+  color: #149ddd;
+  float: left;
+  line-height: 0;
 }
 
-.resume .resume-item ul li {
-  padding-bottom: 10px;
-}
-
-.resume .resume-item:last-child {
-  padding-bottom: 0;
-}
-
-.resume .resume-item::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50px;
-  left: -9px;
-  top: 0;
-  background: #fff;
-  border: 2px solid #1f5297;
+.resume .resume-box span {
+  font-size: 25px;
+  line-height: 40px;
+  display: block;
+  font-weight: 700;
+  color: #050d18;
+  margin-left: 60px;
 }
 
 /*--------------------------------------------------------------
@@ -1045,9 +1011,9 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  padding: 15px;
+  padding: 5px;
   color: #f4f6fd;
-  font-size: 14px;
+  font-size: 10px;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -1063,7 +1029,7 @@ section {
 #footer .credits {
   padding-top: 5px;
   text-align: center;
-  font-size: 13px;
+  font-size: 10px;
   color: #eaebf0;
 }
 
